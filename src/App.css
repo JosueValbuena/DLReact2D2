@@ -42,4 +42,16 @@ html {
     color: white;
     text-shadow: 2px 2px black;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover{
+    border: solid 5px black;
+}
+
+.like{
+    width: 75px;
+    height: 75px;
 }
