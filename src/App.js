@@ -37,7 +37,7 @@ function App() {
       <Mycontext.Provider value={sharedState}>
       <Nav />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/favoritos" element={<Favoritos />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
