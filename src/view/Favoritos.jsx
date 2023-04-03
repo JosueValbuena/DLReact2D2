@@ -1,8 +1,12 @@
 import React from 'react'
+import GaleriaFavoritos from '../components/GaleriaFavoritos'
 
 const Favoritos = () => {
   return (
-    <div>Favoritos</div>
+    <div className='componente-main'>
+      <h2>Favoritos</h2>
+      <GaleriaFavoritos />
+    </div>
   )
 }
 

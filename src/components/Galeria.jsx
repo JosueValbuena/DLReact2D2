@@ -4,13 +4,17 @@ import HeartSvg from './HeartSvg';
 
 const Galeria = () => {
     const fotos = useContext(Mycontext);
-    const [liked, setLiked] = useState(false)
+    const [liked, setLiked] = useState(fotos)
 
     const handleClick = (e) => {
       let likedIndex = fotos.data.findIndex((ele) => ele.id === e);
+      // fotos.data[likedIndex].favorito = !fotos.data[likedIndex].favorito;
       let prueba = !fotos.data[likedIndex].favorito;
-      console.log(likedIndex, fotos.data)
-      console.log(prueba)
+      // setLiked(fotos.data[likedIndex].favorito)
+      setLiked(fotos.data[likedIndex].favorito = prueba);
+      /* console.log(fotos.data);
+      console.log(liked); */
+      console.log(fotos.data);
     }
 
   return (
