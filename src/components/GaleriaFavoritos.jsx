@@ -7,15 +7,15 @@ const GaleriaFavoritos = () => {
     const fotos = useContext(Mycontext);
 
     return (
-        <div>
+        <div className='container'>
             {fotos.data.filter((ele) => ele.favorito === true).map(
-                ele => <div className='container'>
+                ele => 
                     <div className='card'
                         key={ele.id}
                         style={{ backgroundImage: `url(${ele.src})` }}>
                         <p>Autor: {ele.autor}</p>
                     </div>
-                </div>
+                
             )}
             {console.log(fotos.data)};
         </div>
