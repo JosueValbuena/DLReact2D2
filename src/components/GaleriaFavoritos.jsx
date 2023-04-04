@@ -17,7 +17,6 @@ const GaleriaFavoritos = () => {
                     </div>
                 
             )}
-            {console.log(fotos.data)};
         </div>
     )
 }

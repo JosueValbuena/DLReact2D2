@@ -7,14 +7,9 @@ const Galeria = () => {
     const [liked, setLiked] = useState(fotos)
 
     const handleClick = (e) => {
-      let likedIndex = fotos.data.findIndex((ele) => ele.id === e);
-      // fotos.data[likedIndex].favorito = !fotos.data[likedIndex].favorito;
+      let likedIndex = fotos.data.findIndex((ele) => ele.id === e)
       let prueba = !fotos.data[likedIndex].favorito;
-      // setLiked(fotos.data[likedIndex].favorito)
       setLiked(fotos.data[likedIndex].favorito = prueba);
-      /* console.log(fotos.data);
-      console.log(liked); */
-      console.log(fotos.data);
     }
 
   return (
